@@ -1,4 +1,4 @@
-## How to setup Tailwind CSS (Make sureyou have downloaded latest version of node.js: https://nodejs.org/en)
+## How to setup Tailwind CSS (Make sure you have downloaded latest version of node.js: https://nodejs.org/en)
 
 Step 1: Create folder with name "src" and add index.html and script.js and input.css files to it.
 (Make sure PostCSS Language Support Extension and Tailwind CSS Intellisense Extension are enabled, if they are not downloaded,download them.)
