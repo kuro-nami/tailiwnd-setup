@@ -3,7 +3,7 @@
 Step 1: Create folder with name "src" and add index.html and script.js and input.css files to it.
 (Make sure PostCSS Language Support Extension and Tailwind CSS Intellisense Extension are enabled, if they are not downloaded, download them.)
 
-Step 2: Open Terminal (Ctrl+`) and paste the following command and pressenter (you will have to wait a few seconds for it to install packages):
+Step 2: Open Terminal (Ctrl+`) and paste the following command and press enter (you will have to wait a few seconds for it to install packages):
 
 ```
 npm install -D tailwindcss
@@ -15,13 +15,13 @@ Step 3: Now paste this line and press enter in the terminal:
 npx tailwindcss init
 ```
 
-Step 2: Go in tailwind.config.js file change the content:[] line to include this:
+Step 2: Go in tailwind.config.js file change the content:[ ] line to include this:
 
 ```
 content: ["./src/**/*.{html,js}"],
 ```
 
-Step 3: Go to input.css and paste this if it shows error,make sure PostCSS Language Support Extension is enabled:
+Step 3: Go to input.css and paste this. If it shows error, make sure PostCSS Language Support Extension is enabled:
 
 ```
 @tailwind base;
@@ -29,13 +29,13 @@ Step 3: Go to input.css and paste this if it shows error,make sure PostCSS Langu
 @tailwind utilities;
 ```
 
-Step 4: Add this in head of index.html:
+Step 4: Paste this in head of index.html:
 
 ```
 <link href="./output.css" rel="stylesheet">
 ```
 
-Step 5: Paste the following command intoterminal and press Enter:
+Step 5: Paste the following command into terminal and press Enter:
 
 ```
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
