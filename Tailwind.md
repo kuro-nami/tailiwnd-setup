@@ -29,16 +29,16 @@ Step 3: Go to input.css and paste this. If it shows error, make sure PostCSS Lan
 @tailwind utilities;
 ```
 
-Step 4: Paste this in head of index.html:
-
-```
-<link href="./output.css" rel="stylesheet">
-```
-
-Step 5: Paste the following command into terminal and press Enter:
+Step 4: Paste the following command into terminal and press Enter:
 
 ```
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+```
+
+Step 5: Paste this in head of index.html:
+
+```
+<link href="./output.css" rel="stylesheet">
 ```
 
 Step 6: Now you can start using Tailwind CSS.
