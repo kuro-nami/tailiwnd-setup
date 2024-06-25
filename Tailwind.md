@@ -43,4 +43,4 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 
 Step 6: Now you can start using Tailwind CSS.
 
-# Warning: Make sure that you do not make any changes to the .json files and dont change their location aswell as tailwind.config.js file's location or your tailwind might stop working.
+### Warning: Make sure that you do not make any changes to the .json files and dont change their location aswell as tailwind.config.js file's location or your tailwind might stop working.
