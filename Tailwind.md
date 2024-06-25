@@ -15,7 +15,7 @@ Step 3: Now paste this line and press enter in the terminal:
 npx tailwindcss init
 ```
 
-Step 2: Go in tailwind.config.js file change the content:[ ] line to include this:
+Step 2: Go in tailwind.config.js file change the content: [ ] line to include this:
 
 ```
 content: ["./src/**/*.{html,js}"],
@@ -42,3 +42,5 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 
 Step 6: Now you can start using Tailwind CSS.
+
+# Warning: Make sure that you do not make any changes to the .json files and dont change their location aswell as tailwind.config.js file's location or your tailwind might stop working.
