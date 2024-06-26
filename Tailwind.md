@@ -41,6 +41,14 @@ Step 5: Paste this in head of index.html:
 <link href="./output.css" rel="stylesheet">
 ```
 
-Step 6: Now you can start using Tailwind CSS.
+Step 6: Now paste this in package.json file:
+
+```
+  "scripts": {
+    "run": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+```
+
+Step 7: Now you can start using Tailwind CSS.
 
 ### Warning: Make sure that you do not make any changes to the .json files and dont change their location aswell as tailwind.config.js file's location or your tailwind might stop working.
