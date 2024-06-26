@@ -38,7 +38,7 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 Step 5: Paste this in head of index.html:
 
 ```
-<link href="./output.css" rel="stylesheet">
+<link href="/dist/output.css" rel="stylesheet">
 ```
 
 Step 6: Now paste this in package.json file:
