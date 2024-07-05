@@ -46,7 +46,7 @@ Step 6: Now paste this in the first curly bracket in package.json file:
 ,
   "scripts": {
     "run": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-  },
+  }
 ```
 
 Step 7: You need to keep the terminal running for tailwind to work, not infront - you can close it, but don't delete it, if you accidentally delete it, paste this and press enter:
