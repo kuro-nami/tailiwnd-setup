@@ -1,7 +1,6 @@
 ## How to setup Tailwind CSS (Make sure you have downloaded latest version of node.js: https://nodejs.org/en)
 
 Step 1: Create folder with name "src" and add index.html and script.js and input.css files to it.
-(Make sure PostCSS Language Support Extension and Tailwind CSS Intellisense Extension are enabled, if they are not downloaded, download them.)
 
 Step 2: Open Terminal (Ctrl+`) and paste the following command and press enter (you will have to wait a few seconds for it to install packages):
 
@@ -21,7 +20,7 @@ Step 2: Go in tailwind.config.js file change the content: [ ] line to include th
 content: ["./src/**/*.{html,js}"],
 ```
 
-Step 3: Go to input.css and paste this. If it shows error, make sure PostCSS Language Support Extension is enabled:
+Step 3: Go to input.css and paste this:
 
 ```
 @tailwind base;
@@ -38,17 +37,22 @@ npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 Step 5: Paste this in head of index.html:
 
 ```
-<link href="/dist/output.css" rel="stylesheet">
+<link href="output.css" rel="stylesheet">
 ```
 
-Step 6: Now paste this in package.json file:
+Step 6: Now paste this in the first curly bracket in package.json file:
 
 ```
+,
   "scripts": {
     "run": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
 ```
 
-Step 7: Now you can start using Tailwind CSS.
+Step 7: You need to keep the terminal running for tailewind to work, not infront - you can close it, but dont delete it, if you accidentally delete it, paste this and press enter:
+
+```
+npm run run
+```
 
 ### Warning: Make sure that you do not make any changes to the .json files and dont change their location aswell as tailwind.config.js file's location or your tailwind might stop working.
