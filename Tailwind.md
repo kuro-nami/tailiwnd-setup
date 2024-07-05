@@ -1,6 +1,6 @@
 ## How to setup Tailwind CSS (Make sure you have downloaded latest version of node.js: https://nodejs.org/en)
 
-Step 1: Create folder with name "src" and add index.html and script.js and input.css files to it.
+Step 1: Create folder with name "src" and create index.html and script.js and input.css files to it.
 
 Step 2: Open Terminal (Ctrl+`) and paste the following command and press enter (you will have to wait a few seconds for it to install packages):
 
@@ -49,7 +49,7 @@ Step 6: Now paste this in the first curly bracket in package.json file:
   },
 ```
 
-Step 7: You need to keep the terminal running for tailewind to work, not infront - you can close it, but dont delete it, if you accidentally delete it, paste this and press enter:
+Step 7: You need to keep the terminal running for tailwind to work, not infront - you can close it, but don't delete it, if you accidentally delete it, paste this and press enter:
 
 ```
 npm run run
