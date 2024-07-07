@@ -45,7 +45,7 @@ Step 6: Now paste this in the first curly bracket in package.json file:
 ```
 ,
   "scripts": {
-    "run": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "run": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   }
 ```
 
