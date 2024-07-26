@@ -1,6 +1,6 @@
 ## How to setup Tailwind CSS (Make sure you have downloaded latest version of node.js: https://nodejs.org/en)
 
-Step 1: Create folder with name "src" and create index.html and script.js and input.css files to it.
+Step 1: Create index.html and script.js and input.css files to it.
 
 Step 2: Open Terminal (Ctrl+`) and paste the following command and press enter (you will have to wait a few seconds for it to install packages):
 
@@ -17,7 +17,7 @@ npx tailwindcss init
 Step 2: Go in tailwind.config.js file change the content: [ ] line to include this:
 
 ```
-content: ["./src/**/*.{html,js}"],
+content: ["*.{html,js}"],
 ```
 
 Step 3: Go to input.css and paste this:
@@ -31,7 +31,7 @@ Step 3: Go to input.css and paste this:
 Step 4: Paste the following command into terminal and press Enter:
 
 ```
-npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+npx tailwindcss -i ./input.css -o ./output.css --watch
 ```
 
 Step 5: Paste this in head of index.html:
@@ -45,7 +45,7 @@ Step 6: Now paste this in the first curly bracket in package.json file:
 ```
 ,
   "scripts": {
-    "run": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "run": "npx tailwindcss -i ./input.css -o ./output.css --watch"
   }
 ```
 
