@@ -65,4 +65,18 @@ Step 1: Run the following command in terminal:
 npm install -D prettier prettier-plugin-tailwindcss
 ```
 
-Step 2: 
+Step 2: Create a file with name "prettier.config.js" and the following code to it:
+
+```
+module.exports = {
+    plugins: ["prettier-plugin-tailwindcss"],
+};
+```
+
+Step 3: Add this to the plugins: [] of your tailwind.config.js file: 
+
+```
+plugins: ["prettier-plugin-tailwindcss"],
+```
+
+### Done!
