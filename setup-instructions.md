@@ -1,6 +1,6 @@
 ## How to setup Tailwind CSS (Make sure you have downloaded latest version of node.js: https://nodejs.org/en)
 
-Step 1: Create index.html and script.js and input.css files to it.
+Step 1: Create index.html and then create an src folder with script.js and input.css files.
 
 Step 2: Open Terminal (Ctrl+`) and paste the following command and press enter (you will have to wait a few seconds for it to install packages):
 
@@ -31,13 +31,13 @@ Step 3: Go to input.css and paste this:
 Step 4: Paste the following command into terminal and press Enter:
 
 ```
-npx tailwindcss -i ./input.css -o ./output.css --watch
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
 
 Step 5: Paste this in head of index.html:
 
 ```
-<link href="output.css" rel="stylesheet">
+<link href="./src/output.css" rel="stylesheet">
 ```
 
 Step 6: Now paste this in the first curly bracket in package.json file:
@@ -56,3 +56,13 @@ npm run run
 ```
 
 ### Warning: Make sure that you do not make any changes to the .json files and dont change their location aswell as tailwind.config.js file's location or your tailwind might stop working.
+
+## Installing Prettier in tailwindcss:
+
+Step 1: Run the following command in terminal:
+
+```
+npm install -D prettier prettier-plugin-tailwindcss
+```
+
+Step 2: 
